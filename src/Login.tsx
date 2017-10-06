@@ -2,11 +2,11 @@ import * as React from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 
 interface OwnProps { }
-type LoginProps = OwnProps & RouteComponentProps<void>
+type Props = OwnProps & RouteComponentProps<void>
 
-export default class Login extends React.Component<LoginProps> {
+export default class Login extends React.Component<Props> {
   onClick = () => {
-    this.props.history.push('/liste')
+    this.props.history.push('/reports')
   }
 
   render() {
